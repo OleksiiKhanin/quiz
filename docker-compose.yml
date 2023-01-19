@@ -1,0 +1,53 @@
+version: '3.5'
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: card_svc
+    volumes:
+      - ${pwd}/frontend/build:/static
+    ports:
+      - "8080:8080"
+    networks:
+      - app
+    depends_on:
+      - postgres
+    restart: always
+
+  postgres:
+    container_name: postgres_svc
+    image: postgres
+    environment:
+      POSTGRES_USER: "postgres"
+      POSTGRES_PASSWORD: "postgres"
+      POSTGRES_DB: "card_db"
+      PGDATA: /data/postgres
+    volumes:
+      - card_db:/data/postgres
+    ports:
+      - "5432:5432"
+    networks:
+      - app
+    restart: always
+
+  pgweb:
+    container_name: pgweb_svc
+    image: sosedoff/pgweb
+    environment:
+      DATABASE_URL: "postgres://postgres:postgres@postgres:5432/card_db?sslmode=disable"
+    ports:
+      - "6080:8081"
+    networks:
+      - app
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+networks:
+  app:
+    driver: bridge
+
+volumes:
+  card_db:
