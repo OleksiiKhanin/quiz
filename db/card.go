@@ -5,71 +5,63 @@ import (
 	"english-card/dto"
 	"english-card/interfaces"
 	"fmt"
-
 	"github.com/jmoiron/sqlx"
 )
 
-const cardTableName = "languages"
-const complienceTableName = "compliances"
+const cardTableName = "cards"
+const complianceTableName = "compliance"
 
-func GetCardRepo(db *sqlx.DB, images interfaces.ImageRepo) interfaces.CardRepo {
-	return &cardRepo{db: db, images: images}
+func GetCardRepo(db *sqlx.DB) interfaces.CardRepo {
+	return &cardRepo{db: db}
 }
 
 type cardRepo struct {
-	db     *sqlx.DB
-	images interfaces.ImageRepo
+	db *sqlx.DB
 }
 
-func (c *cardRepo) Begin() (interfaces.CardTx, error) {
+func (c *cardRepo) Begin(t interfaces.TransactionGetter) (interfaces.CardTx, error) {
+	if t != nil {
+		if tx := t.GetTX(); tx != nil {
+			return &cardTransaction{tx: tx}, nil
+		}
+	}
 	tx, err := c.db.Beginx()
 	if err != nil {
 		return nil, err
 	}
-	images, err := c.images.Begin()
-	if err != nil {
-		tx.Rollback()
-		return nil, err
-	}
-	return &cardTransaction{tx: tx, images: images}, nil
+	return &cardTransaction{tx: tx}, nil
 }
 
 type cardTransaction struct {
-	tx     *sqlx.Tx
-	images interfaces.ImageTx
+	tx *sqlx.Tx
+}
+
+func (c *cardTransaction) GetTX() *sqlx.Tx {
+	return c.tx
 }
 
 func (c *cardTransaction) InsertCard(ctx context.Context, card *dto.Card) (int64, error) {
-	var err error
-	if len(card.Image.Data) != 0 && card.Image.Hash == "" {
-		card.Image.Hash, err = c.images.SaveImage(ctx, card.Image.Tittle, card.Image.Data)
-		if err != nil {
-			c.tx.Rollback()
-			return 0, err
-		}
-	}
-	result, err := c.tx.ExecContext(
+	var id int64
+	query := fmt.Sprintf("INSERT INTO %s (value, description, lang, image_hash) VALUES ($1,$2,$3,$4) RETURNING id", cardTableName)
+	err := c.tx.QueryRowxContext(
 		ctx,
-		fmt.Sprintf("INSERT INTO %s (value, description, lang, image_uuid) VALUES ($1,$2,$3,$4)",
-			cardTableName),
+		query,
 		card.Value,
 		card.Description,
 		card.Lang,
-		card.Image.Hash,
-	)
+		card.ImageHash,
+	).Scan(&id)
 	if err != nil {
 		c.tx.Rollback()
 		return 0, err
 	}
-	return result.LastInsertId()
+	return id, nil
 }
 
-func (c *cardTransaction) CreateComplience(ctx context.Context, ids [2]int64) error {
+func (c *cardTransaction) CreateCompliance(ctx context.Context, ids [2]int64) error {
 	_, err := c.tx.ExecContext(
 		ctx,
-		fmt.Sprintf("INSERT INTO %s (origin_id, compliance_with) VALUES ($1, $2), ($2, $1)",
-			complienceTableName,
-		),
+		fmt.Sprintf("INSERT INTO %s (origin_id, compliance_with) VALUES ($1, $2), ($2, $1)", complianceTableName),
 		ids[0],
 		ids[1],
 	)
@@ -79,20 +71,38 @@ func (c *cardTransaction) CreateComplience(ctx context.Context, ids [2]int64) er
 	return err
 }
 
-func (c *cardTransaction) GetComplianceCards(ctx context.Context, id int64) ([]dto.Card, error) {
-	panic("implement me")
+func (c *cardTransaction) GetComplianceIDs(ctx context.Context, id int64) ([]int64, error) {
+	query := fmt.Sprintf("SELECT compliance_with FROM %s WHERE origin_id = %d", complianceTableName, id)
+	var ids []int64
+	err := c.tx.SelectContext(ctx, &ids, query)
+	if err != nil {
+		c.tx.Rollback()
+	}
+	return ids, err
 }
 
 func (c *cardTransaction) GetCard(ctx context.Context, id int64) (dto.Card, error) {
-	panic("implement me")
-}
-func (c *cardTransaction) GetIDs(ctx context.Context, lang dto.Language, limit int64) ([]int64, error) {
-	res, err := c.tx.QueryContext(ctx,
-		fmt.Sprintf("SELECT id FROM %s WHERE lang=$1 LIMIT $2", cardTableName),
-		lang,
-		limit,
-	)
+	query := fmt.Sprintf("SELECT id, value, description, lang, image_hash, added_at FROM %s WHERE id=%d", cardTableName, id)
+	var card dto.Card
+	err := c.tx.QueryRowxContext(ctx, query).
+		Scan(&card.ID, &card.Value, &card.Description, &card.Lang, &card.ImageHash, &card.AddedAt)
 	if err != nil {
+		c.tx.Rollback()
+		return card, err
+	}
+	return card, err
+}
+
+func (c *cardTransaction) GetIDs(ctx context.Context, lang dto.Language, limit int64) ([]int64, error) {
+	var query string
+	if limit > 0 {
+		query = fmt.Sprintf("SELECT id FROM %s WHERE lang=$1 LIMIT %d", cardTableName, limit)
+	} else {
+		query = fmt.Sprintf("SELECT id FROM %s WHERE lang=$1", cardTableName)
+	}
+	res, err := c.tx.QueryContext(ctx, query, lang)
+	if err != nil {
+		c.tx.Rollback()
 		return nil, err
 	}
 	defer res.Close()
@@ -107,10 +117,5 @@ func (c *cardTransaction) GetIDs(ctx context.Context, lang dto.Language, limit i
 }
 
 func (c *cardTransaction) End() error {
-	err := c.images.End()
-	if err != nil {
-		c.tx.Rollback()
-		return err
-	}
 	return c.tx.Commit()
 }

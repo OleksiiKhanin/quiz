@@ -1,24 +1,36 @@
 CREATE TABLE images (
     id BIGSERIAL PRIMARY KEY,
-    tittle VARCHAR(255) NOT NULL,
     hash VARCHAR(60) UNIQUE NOT NULL,
+    title VARCHAR(255) NOT NULL,
+    type VARCHAR(50) NULL,
     data BYTEA NOT NULL,
     added_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-CREATE TABLE languages (
+CREATE INDEX image_hash ON images USING hash (hash); 
+
+CREATE TABLE cards (
     id BIGSERIAL PRIMARY KEY,
     value VARCHAR(255) NOT NULL,
-    description VARCHAR(255),
-    lang VARCHAR(100) NOT NULL,
-    image_uuid VARCHAR(60) DEFAULT NULL,
+    description TEXT,
+    lang VARCHAR(80) NOT NULL,
+    image_hash VARCHAR(60) DEFAULT NULL,
     added_at TIMESTAMP NOT NULL DEFAULT NOW()
 );
 
-CREATE INDEX languages_lang ON languages USING btree (lang);
+CREATE INDEX cards_lang ON cards USING btree (lang);
 
-CREATE TABLE compliances (
+CREATE TABLE compliance (
     id BIGSERIAL PRIMARY KEY,
-    origin_id SERIAL NOT NULL,
-    compliance_with SERIAL NOT NULL
+    origin_id BIGSERIAL NOT NULL,
+    compliance_with BIGSERIAL NOT NULL,
+    CONSTRAINT fk_origin_with
+        FOREIGN KEY(origin_id)
+            REFERENCES cards(id)
+            ON DELETE CASCADE,
+    CONSTRAINT fk_compliance_with
+        FOREIGN KEY(compliance_with)
+            REFERENCES cards(id)
+            ON DELETE CASCADE
 );
+

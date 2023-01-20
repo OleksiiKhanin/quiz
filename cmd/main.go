@@ -24,9 +24,9 @@ func main() {
 	}
 
 	images := db.GetImagesRepo(storage)
-	cards := db.GetCardRepo(storage, images)
+	cards := db.GetCardRepo(storage)
 	imageSVC := service.CreateImageService(images)
-	cardSVC := service.CreateCardService(cards)
+	cardSVC := service.CreateCardService(cards, images)
 
 	stop := make(chan os.Signal, 1)
 	signal.Notify(stop, syscall.SIGTERM)

@@ -9,9 +9,20 @@ body {
     top: 50% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
-    width: 35% !important;
+    width: 50% !important;
     background-color: whitesmoke;
     border: 2px solid #000 !important;
     box-shadow: 24 !important;
     padding: 4px !important;
+}
+
+div.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+div.flex-column {
+  display: flex;
+  flex-direction: column;
 }

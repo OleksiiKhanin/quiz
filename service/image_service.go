@@ -15,7 +15,7 @@ func CreateImageService(repo interfaces.ImageRepo) interfaces.ImageService {
 }
 
 func (i *imageService) GetImage(ctx context.Context, hash string) (dto.Image, error) {
-	imageTx, err := i.repo.Begin()
+	imageTx, err := i.repo.Begin(nil)
 	if err != nil {
 		return dto.Image{}, err
 	}
@@ -23,13 +23,13 @@ func (i *imageService) GetImage(ctx context.Context, hash string) (dto.Image, er
 	return imageTx.GetImage(ctx, hash)
 }
 
-func (i *imageService) SaveImage(ctx context.Context, tittle string, image []byte) (string, error) {
-	imageTx, err := i.repo.Begin()
+func (i *imageService) SaveImage(ctx context.Context, tittle, typ string, image []byte) (string, error) {
+	imageTx, err := i.repo.Begin(nil)
 	if err != nil {
 		return "", err
 	}
 	defer imageTx.End()
-	hash, err := imageTx.SaveImage(ctx, tittle, image)
+	hash, err := imageTx.InsertImage(ctx, tittle, typ, image)
 	if err != nil {
 		return "", err
 	}
