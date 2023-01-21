@@ -1,0 +1,57 @@
+Could you repeat the question or rephrase it?;Не могли бы вы повторить вопрос или перефразировать его?;
+Would you mind...;Не могли бы вы;Would you mind going over that one more time. Would you mind repeating that for me again.
+Could I ask you...;Могу ли я попросить;Sorry, could I ask you to tell me that (piece of information) again?
+Could you...;Не могли бы вы;Could you clarify what you meant by... Could you be more specific?
+Could you run it by me one more time;
+I didn't catch that.;;Sorry for interrupt, but I didn't catch that. Could you run it by me one more time
+I didn't get that;
+I want to make sure, I heard that right;Я хочу быть уверенным что услышал правильно;Could I get a little clarification on this topic. I just want to be sure I understood
+I don't think I got your meaning. Could you go over that again?;;
+I was wondering;;
+As I was saying;;Getting back after interruption
+Getting back to what I was saying;;Getting back after interruption
+Where was I?;;If I forgot where I was interupted
+Continuing where I left off;;Getting back after interruption
+clarifying;прояснить
+to be able;;
+Speaking of that;;
+By the way;;
+You know;;
+this;это
+these;эти
+those;те
+Polite;вежливый
+Politeness;вежливость
+suggestion;предложение;What am I saggesting
+sustainability;устойчивость
+possibility;возможность
+ability;способность
+outstanding;выдающийся
+adorable;восхитительный
+averted;предотвращенный
+attractive;привлекательный
+approach;подход
+I wonder who she is;Мне интересно кто она
+fascinating;очаровательно
+barely;едва
+distractive;отвлекающий
+scammer;мощенник
+business development skill set;набор навыков развития бизнеса
+excuse;оправдание
+politeness;вежливость
+assume;полагать
+catch up;догнать
+caught up [kaat up];догнал
+give up;сдаться
+bring up;воспитывать
+order;порядок
+ruthless;безжалостный
+purpose;цель
+awkward;неловко
+mood;настроение
+upset;расстроенный
+disappoint;разочаровать
+impassivity:бесстрастие
+recap;резюмировать
+unclear:неясно
+appointment;деловое свидание, встреча
