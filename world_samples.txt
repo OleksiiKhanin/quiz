@@ -7,13 +7,16 @@ I didn't catch that.;;Sorry for interrupt, but I didn't catch that. Could you ru
 I didn't get that;
 I want to make sure, I heard that right;Я хочу быть уверенным что услышал правильно;Could I get a little clarification on this topic. I just want to be sure I understood
 I don't think I got your meaning. Could you go over that again?;;
-I was wondering;;
+I was wondering;Я думал Я представлял;
+I was thinking;;
+I wanted to know;;
 As I was saying;;Getting back after interruption
 Getting back to what I was saying;;Getting back after interruption
 Where was I?;;If I forgot where I was interupted
 Continuing where I left off;;Getting back after interruption
 clarifying;прояснить
-to be able;;
+to be able;Быть способным;
+I was able;Я смог;I was able to increase revenue by several times.
 Speaking of that;;
 By the way;;
 You know;;
@@ -25,7 +28,7 @@ Politeness;вежливость
 suggestion;предложение;What am I saggesting
 sustainability;устойчивость
 possibility;возможность
-ability;способность
+ability;способность;I think that my most valuable skill is the ability to find a solution to different engineering problems.
 outstanding;выдающийся
 adorable;восхитительный
 averted;предотвращенный
@@ -55,3 +58,93 @@ impassivity:бесстрастие
 recap;резюмировать
 unclear:неясно
 appointment;деловое свидание, встреча
+sure enough;Достаточно уверен;pretty sure
+pretty much;довольно много;
+quite a bit;немного;A little bit;
+I can tell a lot about these things;Я могу многое рассказать об этих вещах
+under the hood;под капотом
+weakness;слабое место;
+find it hard;нахожу сложным;I sometimes find it hard to delegate responsibility
+feels like;как будто;Sometimes it feels like I have to do everything by myself in order to come to the best result
+in order to come to;для достижение;Sometimes it feels like I have to do everything by myself in order to come to the best result
+responsibility;
+delegate;
+obviously;очевидно
+what did you like a least;что тебе понравилось меньше всего
+appreciate;ценить;In the end, I must say that I appreciate your attention and your time. Thanks a lot. I hope you
+conversation;I hope you enjoyed this conversation.;
+courses;курсы;I would like to join your courses to improve my English skills.
+taking the time;не торопясь, нашли время;Thank you for taking the time to meet me
+I can't think of any right now;Я не могу придумать ни одной;
+closure;замыкание
+get back;вернутся
+speaking of;говоря о
+going to;собираюсь
+Go ahead go on;пойдем дальше продолжать
+On the one hand and on the other hand;С одной стороны и с другой стороны;On one side and on the other side
+in a row;подряд;I have been writing code for almost six years in a row.
+as long as;пока
+admiration;восхищение
+run out;закончиться; sorry, but we ran out of apple juice
+mention;упомянуть, ссылка
+be that as it may;как бы то ни било
+aware;осведомленный
+awareness;осведомленность
+having said that;было сказано, что однако
+comprehend;постигать понимать
+humiliated;униженный
+booth;стенд
+kind of;Что-то вроде;
+sort of;вроде
+find out;выяснить
+figure out;понять вычислить
+make sense;имеет смысл
+neither;ни один;Neither do I or Me neither
+implicit;скрытый
+explicit;явный
+make up your mind;определись
+provide;предоставлять
+bring;приносить;Are you bring your whole closet. 
+grateful for;благодарен за;I am grateful for the chance to discuss what I can bring to this company.
+take down notes;делать заметки;make some notes;
+take off;оторватся от земли снимать
+take in;принимать взять в ;I don't know how can I do it but I take it on.
+I have to much ... on my hands;У меня слишком много ...;I have to much time on my hands I have to much work on my hands
+embedded engineer;;I started working in 2011 as an embedded engineer at a factory in Donetsk.
+interest in;увлекаюсь;I have an interested in front-end programming.
+qualified in;квалифицированый;I am qualified in math modeling, control systems engineering, and, of course, computer science.
+tell me about yourself;;I graduated from Donetsk tech university with a master's degree in electromechanical engineering. Mostly it is about robots, self-driving electric cars, etc.
+was attracted to;тянуло к;I was attracted to the computer science
+tuple;кортеж;
+pass back (return);вернуть;
+significant;значительный;We use IN with major significant big things, like countries, cities, continents, etc. I was born in Donetsk
+insignificant;незначительный;We use AT with smaller, insignificant places. I am going to meet you at the restaurant. I am at the farmers market.
+beside (near);возле;
+besides,apart from;кроме того, помимо;
+AMONG vs BETWEEN;среди между;AMONG is used when the items are part of groups (three or more). I can't choose among all you T-shirts. Otehrside BETWEEN is used when there are two options.I can't decide between going to the cinema or staying at home
+IN vs INTO;в;IN is used when we spoke about an objected located in the location. INTO is used when an object comes to some place. He came into my office. We are driving into garage.
+ON vs AT vs IN for the places;на около в;We used ON with streets or avenues. Now I live on Teremkivska street in Kiyv. But important to know when we have full address we used AT. Conclusion AT for the specific location, ON - for the less specific location, and finally we use IN when we describe a district, city, state, country or so on. Also we use IN when we describe a very small location like I wait you in a car. Help me find pencil in the box. ON used when we means a surface on the wall, on the table, on the floor, We use ON when we spoke about transport when we can stand or transport has no roof (on the bus but in the car, on the airplane but in the helicopter, on the boat no roof case, on the bicikle no roof case)
+FOR vs SINCE;в течении начиная c;FOR measures a period of time while SINCE refers to the start date
+TO;в чем для;TO means direction to some place. We will go to Germany when the war is over. I am going to restarant today. Also TO is used when we compare something like: I preferred working to wasting time doing nothing.TO used when to define a receiver in action, for example, I sent an email to the portal. Finally we use TO when try explain the reason our action. I started learning this to improve my skills. Note that in last examples TO uses before verb
+FOR;для с из-за;FOR will describe a benefits, for example I eat vegetables for my health. FOR can describe a period like: I have been programming in golang for six years. FOR can used to describe a reason: He was fired from job for being constantly late. And last but not least FOR used to describe purpose of something. Separated interface and implementation for tests. Travel lot for works. Note that in last examples FOR uses before nouns
+nouns:существительное;There an object or subject: cat,dog, Jonh, Peaple, children
+pronouns:местоимение;The words that substitute a noun to avoid substitution: he is, she is, it, They are, You are, I am,
+verbs;глагол;We use verbs express action:to do, to read, to express
+to express:выражать
+AGREE WITH vs AGREE TO;соглашатся с кем-то против соглашатся с чем-то;We used AGREE WITH when we agree with some person. We used AGREE TO when we agree to some plan or proposal, idea or statement or whatever
+OVER vs RETHER THAN;;OVER means preferring: if you choose one thing over another, you choose that thing rather than the other.I prefer coffee over tea. We use rather than to give more importance to one thing when two alternatives or preferences are being compared.
+increase;увеличивать
+improve;улучшать
+grub your attention;Привлекло внимание;
+to boil some water;вскипятить немного воды
+constantly;постоянно;He was fired from job for being constantly late.
+meantime;тем временем
+in the same time, simultaneously;в тоже время, одновременно
+going to, gonna;собираюсь;I am gonna go, I am going to go. He is gonna watch film. They are gonna play football
+gotta;должен;I gotta go
+regret;Сожалеть;I wish she had not told me a secret, But she told me the secret and I regret that she did. I wish I had studied English harder at scool and at university. But I didn't study hard and I regret it. Regerets kill you
+EACH VS EVERY;каждый;EACH we use when we thiking about something as a group of individual. For example, please read each sentences carefully => Here I mean read all sentences one by one.EVERY we use when it mean something as group or as collective. For example, Every child got a present from Santa. Also you shold use EVERY when you have almost, nearly and practically 
+nearly almost practically;почти;I study English almost every day. Nearly every student was late to class. She's broken practically every record.
+often frequently;часто
+I try my best;Стараюсь изо всех сил
+
