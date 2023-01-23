@@ -3,14 +3,33 @@ package api
 import (
 	"english-card/interfaces"
 	"fmt"
+	"io"
 	"net/http"
 	"os"
+	"time"
 
 	"github.com/gorilla/mux"
 )
 
 type Router struct {
 	*mux.Router
+}
+
+func getLoggerMiddleware(log io.Writer) mux.MiddlewareFunc {
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			defer func(start time.Time) {
+				fmt.Fprintf(log, "time='%s' path='%s' method='%s' remote_addr='%s' duration='%s'",
+					start.Format(time.RFC3339),
+					r.URL.Path,
+					r.Method,
+					r.RemoteAddr,
+					time.Since(start).String(),
+				)
+			}(time.Now())
+			next.ServeHTTP(w, r)
+		})
+	}
 }
 
 func addJsonContentTypeMiddleware(next http.Handler) http.Handler {
@@ -42,6 +61,7 @@ func GetRouter(card interfaces.CardService, images interfaces.ImageService) *Rou
 
 	r.Use(addJsonContentTypeMiddleware)
 	r.Use(getRecoverThePanicMiddleware(func(msg any) { fmt.Fprintf(os.Stderr, "PANIC covered by middleware: %s", msg) }))
+	r.Use(getLoggerMiddleware(os.Stdout))
 
 	r.Methods(http.MethodPost).Path("/v1/card").HandlerFunc(apiCard.CreateCardPairHandler)
 	r.Methods(http.MethodPost).Path("/v1/image").HandlerFunc(apiImage.CreateImageHandler)
