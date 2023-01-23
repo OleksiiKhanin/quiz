@@ -46,10 +46,12 @@ assume;полагать
 catch up;догнать
 caught up [kaat up];догнал
 give up;сдаться
-bring up;воспитывать
+bring up, brought up;воспитывать, воспитанный
+bring, brought, brought;приносить;Are you bring your whole closet. 
 order;порядок
 ruthless;безжалостный
 purpose;цель
+on purpose;специально нарочно
 awkward;неловко
 mood;настроение
 upset;расстроенный
@@ -104,7 +106,6 @@ implicit;скрытый
 explicit;явный
 make up your mind;определись
 provide;предоставлять
-bring;приносить;Are you bring your whole closet. 
 grateful for;благодарен за;I am grateful for the chance to discuss what I can bring to this company.
 take down notes;делать заметки;make some notes;
 take off;оторватся от земли снимать
@@ -130,6 +131,13 @@ FOR;для с из-за;FOR will describe a benefits, for example I eat vegetabl
 nouns:существительное;There an object or subject: cat,dog, Jonh, Peaple, children
 pronouns:местоимение;The words that substitute a noun to avoid substitution: he is, she is, it, They are, You are, I am,
 verbs;глагол;We use verbs express action:to do, to read, to express
+adjective;прилагательное;Adjectives are used to describe nouns or pronouns: old, new, beutiful, smart
+adverbs;наречия;Adverbs are use to describe verbs (actions) or adjectives: carefuly, slowly, finally
+preposition;предлог;We placed a proposition before a noun to modify a phrase: about, above, across on
+conjunction;соединение Место, где что-н. соединено.;This is joining word that we used to connect sentences or different part on sentence: but, and, however, after, never, through
+artiles;артикли;a,an or the
+
+
 to express:выражать
 AGREE WITH vs AGREE TO;соглашатся с кем-то против соглашатся с чем-то;We used AGREE WITH when we agree with some person. We used AGREE TO when we agree to some plan or proposal, idea or statement or whatever
 OVER vs RETHER THAN;;OVER means preferring: if you choose one thing over another, you choose that thing rather than the other.I prefer coffee over tea. We use rather than to give more importance to one thing when two alternatives or preferences are being compared.
@@ -147,4 +155,25 @@ EACH VS EVERY;каждый;EACH we use when we thiking about something as a grou
 nearly almost practically;почти;I study English almost every day. Nearly every student was late to class. She's broken practically every record.
 often frequently;часто
 I try my best;Стараюсь изо всех сил
-
+consequence;последствия
+therefore;следовательно
+Pros and cons;за и против
+comprehend;понимать;Comprehend is thus often a bit stronger than understand: for example, you may understand the instructions in a handbook without completely comprehending their purpose.
+thus;таким образом, поэтому
+hands on approach;практический подход
+concern;беспокойство
+break it down into;разбить его на;Let's break it down into several pieces
+generous;щедрый
+warm;теплый
+misunderstanding;непонимание
+unmistakable;безошибочный
+evaluating;оценка
+intimidation;запугивание
+untenable;не разумно
+tenable;разумно
+suggest;предлагать;May I suggest you ...
+wanna, want to;хочу;You want to know what I say. You wanna know to know
+to desire, desire;желать, желание;
+hurt your feeling;ранить твое чувство;
+advantage;преимущество;
+mention;упомянуть;I use the article "a" or "an" when talking about a subject for the first time, but use "the" when I mention the subject in a conversation again

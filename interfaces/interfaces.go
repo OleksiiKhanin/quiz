@@ -39,9 +39,9 @@ type ImageTx interface {
 type CardTx interface {
 	TransactionGetter
 	InsertCard(ctx context.Context, card *dto.Card) (int64, error)
-	CreateCompliance(ctx context.Context, ids [2]int64) error
+	CreatePairs(ctx context.Context, ids [2]int64) error
 	GetCard(ctx context.Context, id int64) (dto.Card, error)
-	GetComplianceIDs(ctx context.Context, id int64) ([]int64, error)
+	GetPairsIDs(ctx context.Context, id int64) ([]int64, error)
 	GetIDs(ctx context.Context, lang dto.Language, limit int64) ([]int64, error)
 	End
 }

@@ -9,7 +9,7 @@ import (
 )
 
 const cardTableName = "cards"
-const complianceTableName = "compliance"
+const pairsTableName = "pairs"
 
 func GetCardRepo(db *sqlx.DB) interfaces.CardRepo {
 	return &cardRepo{db: db}
@@ -58,10 +58,10 @@ func (c *cardTransaction) InsertCard(ctx context.Context, card *dto.Card) (int64
 	return id, nil
 }
 
-func (c *cardTransaction) CreateCompliance(ctx context.Context, ids [2]int64) error {
+func (c *cardTransaction) CreatePairs(ctx context.Context, ids [2]int64) error {
 	_, err := c.tx.ExecContext(
 		ctx,
-		fmt.Sprintf("INSERT INTO %s (origin_id, compliance_with) VALUES ($1, $2), ($2, $1)", complianceTableName),
+		fmt.Sprintf("INSERT INTO %s (origin_id, pair_with) VALUES ($1, $2), ($2, $1)", pairsTableName),
 		ids[0],
 		ids[1],
 	)
@@ -71,8 +71,8 @@ func (c *cardTransaction) CreateCompliance(ctx context.Context, ids [2]int64) er
 	return err
 }
 
-func (c *cardTransaction) GetComplianceIDs(ctx context.Context, id int64) ([]int64, error) {
-	query := fmt.Sprintf("SELECT compliance_with FROM %s WHERE origin_id = %d", complianceTableName, id)
+func (c *cardTransaction) GetPairsIDs(ctx context.Context, id int64) ([]int64, error) {
+	query := fmt.Sprintf("SELECT pair_with FROM %s WHERE origin_id = %d", pairsTableName, id)
 	var ids []int64
 	err := c.tx.SelectContext(ctx, &ids, query)
 	if err != nil {

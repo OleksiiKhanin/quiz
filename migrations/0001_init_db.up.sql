@@ -20,16 +20,16 @@ CREATE TABLE cards (
 
 CREATE INDEX cards_lang ON cards USING btree (lang);
 
-CREATE TABLE compliance (
+CREATE TABLE pairs (
     id BIGSERIAL PRIMARY KEY,
     origin_id BIGSERIAL NOT NULL,
-    compliance_with BIGSERIAL NOT NULL,
+    pair_with BIGSERIAL NOT NULL,
     CONSTRAINT fk_origin_with
         FOREIGN KEY(origin_id)
             REFERENCES cards(id)
             ON DELETE CASCADE,
-    CONSTRAINT fk_compliance_with
-        FOREIGN KEY(compliance_with)
+    CONSTRAINT fk_pair_with
+        FOREIGN KEY(pair_with)
             REFERENCES cards(id)
             ON DELETE CASCADE
 );

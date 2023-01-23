@@ -2,7 +2,9 @@ package api
 
 import (
 	"english-card/interfaces"
+	"fmt"
 	"net/http"
+	"os"
 
 	"github.com/gorilla/mux"
 )
@@ -18,6 +20,20 @@ func addJsonContentTypeMiddleware(next http.Handler) http.Handler {
 	})
 }
 
+func getRecoverThePanicMiddleware(panicHandler func(any)) mux.MiddlewareFunc {
+	return func(next http.Handler) http.Handler {
+		return http.HandlerFunc(func(w http.ResponseWriter, r *http.Request) {
+			defer func() {
+				msg := recover()
+				if msg != nil {
+					panicHandler(msg)
+				}
+			}()
+			next.ServeHTTP(w, r)
+		})
+	}
+}
+
 func GetRouter(card interfaces.CardService, images interfaces.ImageService) *Router {
 	r := mux.NewRouter()
 
@@ -25,6 +41,7 @@ func GetRouter(card interfaces.CardService, images interfaces.ImageService) *Rou
 	apiImage := GetImageAPI(images)
 
 	r.Use(addJsonContentTypeMiddleware)
+	r.Use(getRecoverThePanicMiddleware(func(msg any) { fmt.Fprintf(os.Stderr, "PANIC covered by middleware: %s", msg) }))
 
 	r.Methods(http.MethodPost).Path("/v1/card").HandlerFunc(apiCard.CreateCardPairHandler)
 	r.Methods(http.MethodPost).Path("/v1/image").HandlerFunc(apiImage.CreateImageHandler)

@@ -49,7 +49,7 @@ func (c *cardService) AddCards(ctx context.Context, image *dto.Image, pairs ...[
 				return err
 			}
 		}
-		err := cardTransaction.CreateCompliance(ctx, [2]int64{cards[0].ID, cards[1].ID})
+		err := cardTransaction.CreatePairs(ctx, [2]int64{cards[0].ID, cards[1].ID})
 		if err != nil {
 			return err
 		}
@@ -68,7 +68,7 @@ func (c *cardService) GetCards(ctx context.Context, id int64) ([]dto.Card, error
 	}
 	results := make([]dto.Card, 1)
 	results[0] = origin
-	ids, err := cardTransaction.GetComplianceIDs(ctx, origin.ID)
+	ids, err := cardTransaction.GetPairsIDs(ctx, origin.ID)
 	if err != nil {
 		return results, fmt.Errorf("get compliance ids failed:%w", err)
 	}
