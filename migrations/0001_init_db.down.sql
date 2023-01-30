@@ -1,3 +1,4 @@
 DROP TABLE images;
-DROP TABLE languages;
-DROP TABLE compliances;
+DROP TABLE cards;
+DROP TABLE pairs;
+DROP TABLE ratings;

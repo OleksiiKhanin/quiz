@@ -56,6 +56,19 @@ func (c *cardService) AddCards(ctx context.Context, image *dto.Image, pairs ...[
 	}
 	return nil
 }
+
+func (c *cardService) UpdateCard(ctx context.Context, card *dto.Card) error {
+	cardTransaction, err := c.repo.Begin(nil)
+	if err != nil {
+		return fmt.Errorf("update a card transaction failed: %w", err)
+	}
+	defer cardTransaction.End()
+	if err := cardTransaction.UpdateCard(ctx, card); err != nil {
+		return fmt.Errorf("update card service failed with: %w", err)
+	}
+	return nil
+}
+
 func (c *cardService) GetCards(ctx context.Context, id int64) ([]dto.Card, error) {
 	cardTransaction, err := c.repo.Begin(nil)
 	if err != nil {

@@ -2,6 +2,7 @@ package api
 
 import (
 	"english-card/interfaces"
+	"english-card/service"
 	"fmt"
 	"io"
 	"net/http"
@@ -61,15 +62,19 @@ func GetRouter(card interfaces.CardService, images interfaces.ImageService) *Rou
 
 	r.Use(addJsonContentTypeMiddleware)
 	r.Use(getRecoverThePanicMiddleware(func(msg any) { fmt.Fprintf(os.Stderr, "PANIC covered by middleware: %s", msg) }))
-	r.Use(getLoggerMiddleware(os.Stdout))
+	r.Use(getLoggerMiddleware(os.Stderr))
 
 	r.Methods(http.MethodPost).Path("/v1/card").HandlerFunc(apiCard.CreateCardPairHandler)
 	r.Methods(http.MethodPost).Path("/v1/image").HandlerFunc(apiImage.CreateImageHandler)
+
+	r.Methods(http.MethodPut).Path("/v1/card/{id}").HandlerFunc(apiCard.UpdateCardHandler)
 
 	r.Methods(http.MethodGet).Path("/v1/card/id/{id}").HandlerFunc(apiCard.GetCardsHandler)
 	r.Methods(http.MethodGet).Path("/v1/card/lang/{lang}").HandlerFunc(apiCard.GetRandomCardsHandler)
 	r.Methods(http.MethodGet).Path("/v1/image/data/{hash}").HandlerFunc(apiImage.GetImageDataHandler)
 	r.Methods(http.MethodGet).Path("/v1/image/object/{hash}").HandlerFunc(apiImage.GetImageObjectHandler)
+
+	r.Methods(http.MethodGet).Path("/v1/word/{word}").HandlerFunc(GetWorldHandler)
 
 	return &Router{r}
 }
@@ -78,4 +83,10 @@ func (r *Router) AddStatic(url, path string) {
 	fileServer := http.FileServer(http.Dir(path))
 	r.PathPrefix(url).Handler(http.StripPrefix(url, fileServer))
 	r.Handle("/", http.RedirectHandler(url, http.StatusPermanentRedirect))
+}
+
+func GetWorldHandler(w http.ResponseWriter, r *http.Request) {
+	word := mux.Vars(r)["word"]
+	fmt.Fprintf(os.Stderr, "try find %s", word)
+	service.NewCambridgeWorldResolver().GetWorld(r.Context(), word)
 }

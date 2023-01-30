@@ -11,7 +11,7 @@ CREATE INDEX image_hash ON images USING hash (hash);
 
 CREATE TABLE cards (
     id BIGSERIAL PRIMARY KEY,
-    value VARCHAR(255) NOT NULL,
+    value VARCHAR(255) UNIQUE NOT NULL,
     description TEXT,
     lang VARCHAR(80) NOT NULL,
     image_hash VARCHAR(60) DEFAULT NULL,
@@ -34,3 +34,13 @@ CREATE TABLE pairs (
             ON DELETE CASCADE
 );
 
+CREATE TABLE ratings (
+    id BIGSERIAL PRIMARY KEY,
+    card_id BIGSERIAL NOT NULL,
+    stars SMALLINT NOT NULL DEFAULT 0,
+    shows INTEGER NOT NULL DEFAULT 0,
+    CONSTRAINT fk_rating_card
+        FOREIGN KEY(card_id)
+            REFERENCES cards(id)
+            ON DELETE CASCADE
+);

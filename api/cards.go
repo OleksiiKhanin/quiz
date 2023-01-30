@@ -30,8 +30,35 @@ func (c *cardAPI) CreateCardPairHandler(w http.ResponseWriter, r *http.Request) 
 		w.WriteHeader(http.StatusInternalServerError)
 		json.NewEncoder(w).Encode(apiError{ErrMsg: err.Error()})
 	} else {
-		w.WriteHeader(http.StatusAccepted)
+		w.WriteHeader(http.StatusCreated)
 		json.NewEncoder(w).Encode(request.Cards)
+	}
+}
+
+func (c *cardAPI) UpdateCardHandler(w http.ResponseWriter, r *http.Request) {
+	id, err := strconv.ParseInt(mux.Vars(r)["id"], 10, 64)
+	if err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(apiError{ErrMsg: err.Error()})
+		return
+	}
+	var card dto.Card
+	if err := json.NewDecoder(r.Body).Decode(&card); err != nil {
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(apiError{ErrMsg: err.Error()})
+		return
+	}
+	if card.ID != id || id == 0 {
+		w.WriteHeader(http.StatusBadRequest)
+		json.NewEncoder(w).Encode(apiError{ErrMsg: "can not match card id with request id, and you can not modify card id"})
+		return
+	}
+	if err := c.svc.UpdateCard(r.Context(), &card); err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(apiError{ErrMsg: err.Error()})
+	} else {
+		w.WriteHeader(http.StatusAccepted)
+		json.NewEncoder(w).Encode(card)
 	}
 }
 

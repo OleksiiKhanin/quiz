@@ -71,6 +71,19 @@ func (c *cardTransaction) CreatePairs(ctx context.Context, ids [2]int64) error {
 	return err
 }
 
+func (c *cardTransaction) UpdateCard(ctx context.Context, card *dto.Card) error {
+	_, err := c.tx.ExecContext(
+		ctx,
+		fmt.Sprintf("UPDATE %s SET value=$1, description=$2 WHERE id=%d", cardTableName, card.ID),
+		card.Value,
+		card.Description,
+	)
+	if err != nil {
+		c.tx.Rollback()
+	}
+	return err
+}
+
 func (c *cardTransaction) GetPairsIDs(ctx context.Context, id int64) ([]int64, error) {
 	query := fmt.Sprintf("SELECT pair_with FROM %s WHERE origin_id = %d", pairsTableName, id)
 	var ids []int64

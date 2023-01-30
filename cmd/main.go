@@ -1,47 +1,43 @@
 package main
 
 import (
-	"context"
+	"english-card/api"
 	"flag"
 	"fmt"
+	"github.com/gorilla/mux"
 	"log"
 	"net/http"
-	"os"
-	"os/signal"
-	"syscall"
-	"time"
-
-	"english-card/api"
-	"english-card/db"
-	"english-card/service"
 )
 
 func main() {
-	storage := db.GetDB(opt.DB.Host, opt.DB.User, opt.DB.Pass, opt.DB.Name, opt.DB.Port)
+	//storage := db.GetDB(opt.DB.Host, opt.DB.User, opt.DB.Pass, opt.DB.Name, opt.DB.Port)
+	//
+	//if err := db.MigrateSchema(storage.DB, opt.MigrationPath); err != nil {
+	//	log.Fatalln(err.Error())
+	//}
+	//
+	//images := db.GetImagesRepo(storage)
+	//cards := db.GetCardRepo(storage)
+	//imageSVC := service.CreateImageService(images)
+	//cardSVC := service.CreateCardService(cards, images)
+	//
+	//stop := make(chan os.Signal, 1)
+	//signal.Notify(stop, syscall.SIGTERM)
+	//router := api.GetRouter(cardSVC, imageSVC)
+	//router.AddStatic("/static", opt.StaticFilesPath)
+	//srv := http.Server{
+	//	Addr:    fmt.Sprintf(":%d", opt.Port),
+	//	Handler: router,
+	//}
 
-	if err := db.MigrateSchema(storage.DB, opt.MigrationPath); err != nil {
-		log.Fatalln(err.Error())
-	}
-
-	images := db.GetImagesRepo(storage)
-	cards := db.GetCardRepo(storage)
-	imageSVC := service.CreateImageService(images)
-	cardSVC := service.CreateCardService(cards, images)
-
-	stop := make(chan os.Signal, 1)
-	signal.Notify(stop, syscall.SIGTERM)
-	router := api.GetRouter(cardSVC, imageSVC)
-	router.AddStatic("/static", opt.StaticFilesPath)
-	srv := http.Server{
-		Addr:    fmt.Sprintf(":%d", opt.Port),
-		Handler: router,
-	}
-
-	go srv.ListenAndServe()
-	<-stop
-	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
-	defer cancel()
-	log.Fatalln(srv.Shutdown(ctx))
+	//go srv.ListenAndServe()
+	//<-stop
+	//ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
+	//defer cancel()
+	//log.Fatalln(srv.Shutdown(ctx))
+	r := mux.NewRouter()
+	r.HandleFunc("/v1/word/{word}", api.GetWorldHandler)
+	log.Fatal(http.ListenAndServe(fmt.Sprintf(":%d", opt.Port), r))
 }
 
 var opt Options
