@@ -14,6 +14,7 @@ import (
 type cardService struct {
 	repo   interfaces.CardRepo
 	images interfaces.ImageRepo
+	rating interfaces.RatingTx
 }
 
 func CreateCardService(repo interfaces.CardRepo, images interfaces.ImageRepo) interfaces.CardService {

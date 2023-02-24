@@ -13,6 +13,7 @@ CREATE TABLE cards (
     id BIGSERIAL PRIMARY KEY,
     value VARCHAR(255) UNIQUE NOT NULL,
     description TEXT,
+    type VARCHAR(50) NULL,
     lang VARCHAR(80) NOT NULL,
     image_hash VARCHAR(60) DEFAULT NULL,
     added_at TIMESTAMP NOT NULL DEFAULT NOW()
@@ -36,11 +37,14 @@ CREATE TABLE pairs (
 
 CREATE TABLE ratings (
     id BIGSERIAL PRIMARY KEY,
-    card_id BIGSERIAL NOT NULL,
-    stars SMALLINT NOT NULL DEFAULT 0,
+    card_id BIGSERIAL UNIQUE NOT NULL,
+    stars REAL NOT NULL DEFAULT 0,
     shows INTEGER NOT NULL DEFAULT 0,
+    modified_at TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
     CONSTRAINT fk_rating_card
         FOREIGN KEY(card_id)
             REFERENCES cards(id)
             ON DELETE CASCADE
 );
+
+CREATE INDEX ratings_card_id ON ratings USING btree (card_id);

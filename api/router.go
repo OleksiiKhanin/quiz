@@ -1,6 +1,7 @@
 package api
 
 import (
+	"encoding/json"
 	"english-card/interfaces"
 	"english-card/service"
 	"fmt"
@@ -87,6 +88,13 @@ func (r *Router) AddStatic(url, path string) {
 
 func GetWorldHandler(w http.ResponseWriter, r *http.Request) {
 	word := mux.Vars(r)["word"]
-	fmt.Fprintf(os.Stderr, "try find %s", word)
-	service.NewCambridgeWorldResolver().GetWorld(r.Context(), word)
+	fmt.Fprintf(os.Stderr, "try find %s\n", word)
+	result, err := service.NewCambridgeWordResolver().GetWord(r.Context(), word)
+	if err != nil {
+		w.WriteHeader(http.StatusInternalServerError)
+		json.NewEncoder(w).Encode(apiError{ErrMsg: err.Error()})
+	} else {
+		w.WriteHeader(http.StatusOK)
+		fmt.Printf("%+s", json.NewEncoder(w).Encode(result))
+	}
 }

@@ -8,7 +8,7 @@ I didn't catch that.;Я не уловил это;Sorry for interrupt, but I didn
 I didn't get that;Я не понял это;
 got your meaning;что ты имел ввиду;I don't think I got your meaning. Could you go over that again?;
 I have got;У меня есть;I have got a few items
-I was wondering;Я думал Я представлял;
+I was wondering;Я представлял,Мне интересно;I wonder who she is;Мне интересно кто она
 I was thinking;Я думаю;
 I thought;Я думал (решил);
 Your thoughts;Твои мысли;What are you thoughts about that?
@@ -18,17 +18,18 @@ Where was I?;Гдя я остановился;If I forgot where I was interrupte
 Continuing where I left off;Продолжая где меня прервали;Getting back after interruption
 clarifying;прояснить
 clarification;уточнение;Could I get a little clarification on this topic. I just want to be sure I understood
-reply, answser;Ответить;And feeling cool, calm and collected as you reply/answser
+reply,answser;Ответить;And feeling cool, calm and collected as you reply/answser
 audience;зрительская аудитория;[odience] Knowing your cpntext and you audience is extremely important.
-to be able;Быть способным;I was able to increase revenue by several times;Я смог поднять прибыль в несколько раз;
+unable;неспособный
+able;способный;I was able to increase revenue by several times;Я смог поднять прибыль в несколько раз;
 ability;способность;I think that my most valuable skill is the ability to find a solution to different engineering problems.
 speaking of that;Говоря об этом;
 by the way;Кстати;
 this;это
 these;эти;I can tell a lot about these things;Я могу многое рассказать об этих вещах
 those;те;[thos]
-polite;вежливый
-politeness;вежливость
+polite;вежливый;[polAIt]
+politeness;вежливость;[polAItnes]
 suggestion;предложение предлагать;[sagjestin] What am I saggesting
 to suggest;предлагать;[sagjest] May I suggest you ...
 possibility;возможность
@@ -36,66 +37,66 @@ outstanding;выдающийся
 adorable;восхитительный
 attractive;привлекательный
 to attract;притягивать;I was attracted to the computer science
-approach;подход,подходть
-hands on approach;практический подход
+approach;подход,подходить
 approachable;доступный
+hands on approach;практический подход
+hands on experience;практический опыт
 suit;подходить (неодушевленный предмет);We created a design that will suit a range of users
 prevented;предотвращенный
-I wonder who she is;Мне интересно кто она
-fascinating;очаровательно;I find it realy fascinating how many things we do in our daily lives are just accepted and they are rarely questioned.
-rarely;редко;[reli] rarely questioned;редко подвергается сомнению
+fascinating;очаровательно;[fAcinatin] I find it realy fascinating how many things we do in our daily lives are just accepted and they are rarely questioned.
 that's the way things are;так обстоят дела;
 go with a flow;плыть по течению
-barely;едва
+rarely;редко;[reli] rarely questioned;редко подвергается сомнению
+barely;едва;[barly]
 distractive;отвлекающий
 distraction;отвлечение
-distraption;рассеянность, отвлекающие факторы;Please make sure you put your microphone on mute to keep distraption to a minimum
-distrapt;отвлекать,разрушать
+distract;отвлекать
+distraption;рассеянность,отвлекающие факторы;Please make sure you put your microphone on mute to keep distraption to a minimum
+distrapt;разрушать
 business development skill set;набор навыков развития бизнеса
 excuse;оправдание
 assume;полагать
-catch up;догнать
-caught up;догнал;[kaat up]
+assumption;предположение
+throw,threw,thrown;бросать,бросал,брошенный
+catch up,caught up;догнать,поймать,догнал;[kach up],[kaat up]
 give up;сдаться
-bring up;воспитывать
-brought up;воспитанный;[brout]
-bring, brought, brought;приносить;[brout] Are you bring your whole closet. 
+bring up,brought up;воспитывать,воспитанный;[bring up][brout up]
+bring,brought,brought;приносить;[bring],[brout] Are you bring your whole closet. 
 order;порядок
-ruthless;безжалостный
-goal;цель
-purpose;цель;[purpes]
+ruthless;безжалостный;[rUfles]
+goal;цель;target,aim,purpose[pUrpus]
 on purpose;специально нарочно
-awkward;неловко;
+on goal;в цель
+awkward;неловко;[Akvard]
 mood;настроение
-upset;расстроенный
 disappoint;разочаровать
 impassivity:бесстрастие
 recap;резюмировать
 unclear:неясно
+obscure;смутный
 appointment;деловое свидание, встреча
-sure enough;Достаточно уверен;pretty sure
 pretty much;довольно много;
 quite;немного,довольно,вполне,совсем;I am not quite sure I understand correctly your point.;
 under the hood;под капотом
 weakness;слабое место;
-flaws;недостатки;I am only human with my own flaws
+flaw;недостаток;I am only human with my own flaws
+lack;отсутствие,недостаток;there is no lack of entertainment aboard ship;на корабле нет недостатка в развлечениях
 inevitable;неизбежный;[inEvitibul]
 observation;наблюдение;This is only my own observation and experience.
 allthough;хотя;[alzov]
 find it hard;нахожу сложным;I sometimes find it hard to delegate responsibility
 find out;выяснить
-figure out;понять вычислить
+figure out;понять,вычислить,разобраться
 feels like;как будто;Sometimes it feels like I have to do everything by myself in order to come to the best result
 in order to come to;для достижение;Sometimes it feels like I have to do everything by myself in order to come to the best result
 in order to;чтобы
-responsibility;обязанность
 obviously;очевидно
 lately;в последнее время
 I hope you get the idea;Я надеюсь, вы поняли идею
 least;наименее;what did you like least;что тебе понравилось меньше всего
-appreciate;ценить;In the end, I must say that I appreciate your attention and your time. Thanks a lot. I hope you
+appreciate;ценить;[Aprishiet] In the end, I must say that I appreciate your attention and your time. Thanks a lot. I hope you
 conversation;беседа;I hope you enjoyed this conversation;
-courses;курсы;I would like to join your courses to improve my English skills.
+courses;курсы;[korses] I would like to join your courses to improve my English skills.
 taking the time;не торопясь, нашли время;Thank you for taking the time to meet me
 I can't think of any right now;Я не могу придумать ни одной;
 closure;замыкание
@@ -105,7 +106,9 @@ go ahead, go on;пойдем дальше продолжать
 on the one hand and on the other hand;С одной стороны и с другой стороны;On one side and on the other side
 in a row;подряд;I have been writing code for almost six years in a row.
 as long as;пока
-admiration;восхищение
+admiration;восхищение;
+admit;признавать
+waist;талия
 run out;закончиться; sorry, but we ran out of apple juice
 to mention;упомянуть, ссылка;Now before we got started, I have also got something realy important to mention...I mentioned that when I lived in Donetsk, I worked in a start-up company with a fairly wide range of responsibilities.I use the article "a" or "an" when talking about a subject for the first time, but use "the" when I mention the subject in a conversation again
 to emphasize;подчеркнуть;I want to emphasize the really important things. I always emphasize the simplicity of the language that we want to use 
@@ -114,22 +117,23 @@ aware;осведомленный
 awareness;осведомленность
 having said that;было сказано, что однако
 comprehend;постигать понимать
-humiliated;униженный;;[хьюмилиетед]
+humiliate;унижать;;[хьюмилиетед] I just got humiliated by teenagers at TechCrunch Disrapt.
 booth;стенд
 kind of;Что-то вроде;
 sort of;вроде
 make sense;имеет смысл
 make up your mind;определись
-to make sure;убедится;I want to make sure, I heard that right;Я хочу быть уверенным что услышал правильно;
-neither;ни один;Neither do I or Me neither. Not either of two things or people
-either;;used in negative sentences instead of "also" or "too": They do really good food at that restaurant and it's not very expensive either. I've never been here before either, so it's all strange to me too. 
+neither;ни один;Used when we can't choose anyone from TWO options not this one and not that one. Neither do I or Me neither. Not either of two things or people.
+either;либо,или;Used when we select one of the TWO options. Also used when we show our agreement or we try express additional information in the negative sentences instead of "also" or "too": They do really good food at that restaurant and it's not very expensive either. I've never been here before either, so it's all strange to me too.
 implicit;скрытый
 explicit;явный
 grateful for;благодарен за;I am grateful for the chance to discuss what I can bring to this company.
+grateful to you;благодарна тебе
 take down notes;делать заметки;make some notes;
 take off;оторватся от земли снимать
 take on;принимать взять в ;I don't know how can I do it but I take it on.
 take out;выносить,вывозить;take out the trash
+take,took,taken;взять, взял, взял;
 to put to;положить, поставить;To put the children (kids) to bed
 I have to much ... on my hands;У меня слишком много ...;I have to much time on my hands I have to much work on my hands
 embedded engineer;;I started working in 2011 as an embedded engineer at a factory in Donetsk.
@@ -159,6 +163,7 @@ artiles;артикли;a,an or the
 I catch myself thinking;Я ловлю себя на мысли
 to express:выражать
 AGREE WITH vs AGREE TO;соглашатся с кем-то против соглашатся с чем-то;We used AGREE WITH when we agree with some person. We used AGREE TO when we agree to some plan or proposal, idea or statement or whatever
+agree;соглашатся;I think we can all agree with
 OVER vs RATHER THAN;;OVER means preferring: if you choose one thing over another, you choose that thing rather than the other.I prefer coffee over tea. We use rather than to give more importance to one thing when two alternatives or preferences are being compared.
 rather than;скорее, чем;We really like to ease into conversation with a little bit of small talk first rather than dive straight into something deeper
 increase;увеличивать
@@ -177,6 +182,7 @@ often;часто;[ofn]
 frequently;часто;[frikventli]
 I try my best;Стараюсь изо всех сил
 consequence;последствия;[consikvens]
+sequence;последовательность
 Pros and cons;за и против
 comprehend;понимать;Comprehend is thus often a bit stronger than understand: for example, you may understand the instructions in a handbook without completely comprehending their purpose.
 thus;таким образом, поэтому;[thas]
@@ -194,6 +200,7 @@ wanna, want to;хочу;You want to know what I say. You wanna know to know
 to desire, desire;желать, желание;
 hurt your feeling;ранить твое чувство;
 advantage;преимущество;[advenEch]
+benefits;преимущества
 on my own;самостоятельно;Basically, all the time I was learning English on my own.
 to arrive;прибыть
 groceries;продукты;[groseris]
@@ -213,7 +220,8 @@ loud up;громче
 thin;тонкий
 thick;толстый
 sharp;острый
-tight;туго
+tight;туго,плотно,в обтяжку
+sit tight;держатся вместе
 loose;свободный
 near;рядом
 far;далеко
@@ -222,6 +230,7 @@ special;особенный
 graceful;изящный
 stunning;ощеломительный,оглушительный
 magnificent;великолепный,величественный
+gorgeous;великолепный
 pleasant;приятный
 unpleasant;неприятный
 disgusting;отвратительный
@@ -229,6 +238,8 @@ annoying,irritating;раздражающий
 nasty;противный
 useful;полезный
 useless;без полезный
+use;использовать
+exploit;эксплуатировать
 important;важный
 frightening;пугающий
 scared;испуганный
@@ -284,12 +295,12 @@ reasonable;разумный
 unreasonable;неразумный 
 mature;зрелый;[machOr]
 immature;не зрелый;[imachOr]
+emberassment;смущение
 outgoing;исходящий
 calm;спокойствие
 claim;претендовать
 to demand, to require;требовать
 demand;требование
-confident;уверенный в себе;[konfIdent]
 honest;честный;[Onest]
 dishonest;нечестный;[disOnest]
 reliable;надежный;[rElaibel]
@@ -302,7 +313,7 @@ pleased;довольный
 cheerful;веселый
 surprised;удивлен
 curious;любопытный;I want to tell you why I did this research and got curious about it
-sad, upset, unhappy, disappointed;расстроенный
+sad,upset,unhappy,disappointed;расстроенный
 miserable;убогий,жалкий
 lonely;Одинокий
 gusty;порывистый
@@ -314,6 +325,7 @@ flour;мука
 salmon;лосось
 cod;треска
 sausages;колбасы;[saseges]
+cutlet;котлета
 wing;крыло
 butter;масло
 shell;оболочка,панцирь,ракушка
@@ -352,6 +364,7 @@ manufacturing;производство
 highlighter;маркер
 highlight, mark, emphasize;выделять, отмечать, подчеркивать
 ruler;линейка
+shoulder;плечо
 ATM, cash machine;банкомат
 to negotiate;вести переговоры;[negoshiet]
 negotiator;переговорщик;
@@ -365,17 +378,23 @@ join forces;объединение усилий;When our development team joined
 adaptable;адаптируемый
 organized;организованный
 customer-oriented;ориентированный на клиента
-responsible;ответственный
+responsible,accountable;ответственный
+irresponsible;безответственный
+responsibility;обязанность
 independent;независимый
 definite;определенный;[dEfenit]
+definitely;определенно
 certain;определенный;[sErten]
+uncertain;неуверенный
 team player;командный игрок
 entirely;полностью;[entAIli]
 to expect;ожидать;
 expectation;ожидание;It's important to everyone at the meeting to have an expectation of how the meeting is going to be run
 satisfaction;удовлетворение;
+to satisfy;удовлетворить
 agenda;повестка дня;An Agenda meting can iclude this: firt, second, than, after that, Next one, Finally;
 brief;краткий
+brick;кирпич
 to keep an eye on;следить за;Guys please keep an eye on the time
 get to know;узнать;Small talk is incredibly important when you getting to know your collegues and your clients
 to ease;облегчать;We realy like to ease into conversation;мы действительно хотели бы облегчить разговор
@@ -387,6 +406,7 @@ come up;подходить;Do you have some plans to weekend coming up?
 recent;недавний;You can ask about recent experience
 to focus, to focus on something;концентрироваться,сфокусироваться на;
 related;Связанный;If you are introducing yourself in job interview, you might be focus on job-related experience.
+tied;связанный
 to relate;относиться;
 to refer;ссылаться;[refE]
 tricky;сложный;may be a little tricky;может быть немного сложно
@@ -394,15 +414,19 @@ regularly;регулярно;[regulely] We all know that, if you don't practice 
 definitely;определенно;We definitely want to do this
 to get familiar;познакомиться, разобраться;[femIlia]You are just going to get familiar with the story. Have we met before? You look familiar.
 interaction;взаимодействие;Conversation is an interaction between us through [thou] words.
-habits;привычки;bad habits;плохие привычки
+habit;привычка;bad habits;плохие привычки
 to omit;пропускать
 to emit;излучать
 extremely;чрезвычайно;And one more exercise that helps you extremely to improve your speaking skills is recording your voice and them listening to yourself
 handy, convenient;удобный;[konvinient] By answering to small talk questions when you are learning English, you will improve your knowledge and by the way, it is very handy
+confident;уверенный в себе;[konfIdent]
+sure enough;Достаточно уверен;pretty sure
+to make sure;убедится;I want to make sure, I heard that right;Я хочу быть уверенным что услышал правильно;
 to appropriate;присвоить
 corresponds,corresponding;соответствует,соответсвующее
 spark;искра
 affairs;дела
+nook;укромный уголок
 no offense;без обид
 comfortable;комфортный;[kamftebl] You are filling comfortable with this.
 crucial;ключевой;[crushl] This is a crucial moment of you career
@@ -411,6 +435,7 @@ to chat with;поболтать с;I am going to drink some water. See you later
 stick around;не уходите;to stay somewhere for a period of time:
 estimate;оценить;It's difficult to estimate the financial impact of this solution.
 impact;влияние,воздействие
+suppose;предполагать
 guess;предполагать;[ges] There so many greate words when you want to sound more profession when you have to take guess. Sometimes using guess suggest that you are uncertain. So using "ESTIMATE" you have put some thought into this prediction or this guess.
 predict;предполагать;Many experts are predicting significant changes in our working environment in the post-war period.
 predictable;предсказуемы;There a lot of conversation is a quite predictable.
@@ -429,21 +454,22 @@ however;Однако;Use "HOWEVER" instead a "BUT"
 moreover;более того;Use "MOREOVER" instead a "ALSO"
 therefore;следовательно
 suddenly;вдруг, внезапно 
-in particular;в частности;[patikula]
+in particular;в особенности;[patikula]
 particularly;особенно;[patikulali]
 go on a trip;отправиться в путешествие;Absolutely, I'm going on a trip as soon as possible. I have many friends in Germany. I want to see Berlin and Frankfurt.
 travel;поездка,путешествие;I wish I had more travel stories. But nowadays I can not travel much. You know the last three years have been crazy.
 luggage;багаж;[lagej]
 bag;сумка
-sight;достопримечательность;[saits]
+sight;достопримечательность,взгляд;[saits] To avoid theft, keep you device in sight at all time.
 regard;внимание
 regardless;несмотря на, без внимание
 regarding;что касается
 sleeve;рукав
 up your sleeve;в рукаве
 controversial;спорный;It is quite controversial topic isn't it
+confrontational;конфронтационный
 seem;казатся
-seamless;невзрачный
+seamless;бесшовный,невзрачный
 gathering;встреча
 to remind;напоминать;
 upside down;вверх ногами
@@ -469,7 +495,6 @@ neighbor;сосед;[neiba]
 as well as;такжe;We use "AND" and "AS WELL AS" for adding information. We can replace "and" with "as well as". For example, Protugal is popular destination in summer and in winter we can replace with Portugal is popular destination in summer as well as winter
 whereas;тогда как;[weaz] To show a contrast we can use "BUT" in casual conversation and use "WHEREAS" to sound a little bit more professional.
 coastal;прибрежный;[kOstel] Enjoy a coastal holiday or a trip to the mountains. Or you can use either instead or, for example, Enjoy either a coastal holiday or a trip to the mountains.
-consequences;последствия;
 coincidence;совпадение
 circumstances;обстоятельства
 achievement;достижение
@@ -477,7 +502,9 @@ effortless;без труда
 guinea pig;морская свинка;Well I have a two guinea pigs. This is a small and funny hanster-like beast, that sleep, and run each other whole day and whole night.
 hamster;хомяк
 beast;зверь
-bet;бьюсь об заклад;Oh my god, I see you're so funny, I bet you are a comedian
+bet,bet,bet;бьюсь об заклад,спорю;Oh my god, I see you're so funny, I bet you are a comedian
+bite,bit,bitten;кусать,укусил(кусочек),укусил;[bAIt],[bit]
+breed,bred,bred;разводить,порода
 properly;правильно
 suspense;неизвестность
 quantity;количество
@@ -490,7 +517,7 @@ entire;весь
 towards;к;let's back towards this
 intercom;внутренняя связь
 pleasant;приятный
-apparently;по всей видимости
+apparently;по всей видимости,видимо
 wrangle;пререкания,спор
 procedure;процедура;[prosijA]
 sunken;затонувший
@@ -502,3 +529,334 @@ filing;подать (документы, отчет)
 filings;документы
 against;против
 to give over;передать, отдать
+essentially;по существу, по сути;
+essential;существенный
+sibling;брат, сестра
+obtain;получать
+intercept;перехватывать
+perform;выполнять
+rather;скорее,лучше,предпочтительнее;[rAzar]
+term sheet;перечень условий
+to spooke;напугать
+got spooked;испугался
+shoved;толкнул
+acquisition;приобретение
+throat;горло
+shares;акции
+to blow;дуть,пропустить
+to blew;дул, пропустил
+blew up;взорвал
+superior;начальство;[supErio]
+shrewd;проницательный;[shrUd]
+to wander;бродить
+accident;случайность;[aksIden]
+startle;вздрагивать;[stAtel]
+cooperation;сотрудничество
+to refuse;отказаться;people refuse to delete all his useless selfie
+favorable;благоприятный;[fAIverebel]
+favor;услуга;[fAIva]
+dubious;сомнительный
+ruffle;раздражение;I am not trying to ruffle anyone's feathers
+feather;перо
+butt in;перебивать
+jump in to conversation;входить в разговор
+get something through to someone;достучатся
+patience;терпение
+adjusting;корректировка
+adjust;регулировать
+bring something up;принести в разговор
+find it kind of tricky;нахожу ето сложним
+contractions;сокращения
+hiking;пеший туризм
+ferry;переправлять, перевозить на пароме
+looking for;в поисках
+intention;намерение;
+ahead;предстоящий
+unlike;в отличие
+tweak;подправить
+wind;ветер,дыхание
+breeze;дыхание
+gauge;измерять,калибровать;[gAj]
+to calibrate;калибровать
+to measure;измерять
+roll off;скатиться
+wherehouse;склад
+workflow;рабочий процесс
+suffer;страдать
+keep in touch;поддерживать связь
+hint;намекать,намек
+advertisement,ad;реклама
+trial;испытание,проба
+gap;зазор,разрыв
+in fact;по факту
+necessary;необходимо
+concentrate;сконцентрироваться
+amount;количество;Constantly generates huge amounts of data;Постоянно генерирует огромное количество данных
+literally;буквально
+notice;уведомление
+distributed;распределенные
+reconcile;примириться
+distord;искажать
+behavior;поведение
+affect;оказывать воздействие
+belong;принадлежать
+for;для;means benefits or help information or favor
+to;к;means direction or time duration;
+carry;нести
+collocation;словосочетание
+appear;появляться
+disappear;пропадать
+pitfalls;подводные камни,ловушки
+colleagues;коллеги по работе
+workloads;рабочие нагрузки
+treat;обращаться с чем-либо,относиться к чему-либо
+shame;позор,стыдить
+directly;напрямую
+I will do my best, I will do what I can;я сделаю все возможное
+deploy;разворачивать
+deliver;доставлять
+exhausted;измученный;[egzosted]
+mass;масса
+scope;область видимости
+enhance;усиливать
+worth;ценность,стоимость;[woz] Value, price, cost
+cost,cost,cost;стоить,стоил
+valuation;оценка
+dignity;достоинства
+rifle;винтовка
+explode;взорваться;Data creation is exploding.
+velocity;скорость;speed Our main concern is how you are going to achieve escape velocity on your growth rate;Нас больше всего беспокоит то, как вы собираетесь достичь скорости убегания при данной скорости роста.
+rate;уровень,рейтинг
+capacity;емкость
+overtake;обогнать;At the current rate the world's data storage capacity will be overtaken by next spring
+rationing;нормирование
+shortage;нехватка;shortages;дефицит
+conviction;убеждение
+to convict;осуждать
+to judge;судить
+advanced;передовой
+advance;продвигать;promote
+doubt;сомневаться;[dout]
+fit;соответствовать,подходить;
+congratulation;поздравление
+dilute;разбавить;[dailut]
+correlation;корреляция;There is a linear correlation between how intolerable I was and the height of valuation
+intolerable;невыносимый,нестерпимый;[intOrable]
+recognize;распознавать;I recognize you from your photograph.
+competitive;конкурентоспособный;[compEtetive] A very competitive offer
+pace;темп;You want to start with realistic valuation and grow at a reasonable pace.
+afloat;на плаву;She needs PiedPiper to keep Raviga afloat.
+untainting;незапятнанный
+taint;портить
+breach;нарушение,утечка
+foreign;иностранный;[foren]
+spear;копье
+accordingly,respectively;соответственно
+according to;в соответствии с
+theft;кража;[teft]
+thief;вор;[tif]
+guidance;руководство;[gAIdens]
+reveal;раскрывать
+PII;Личная информация;Personal Identifiable Information;
+Identifiable;Идентифицируемый;[AIdentifaibl]
+moderately;умеренно;[modEretly]
+retrieve;забрать
+drawer;ящик;[dro]
+afford;позволить себе;afford to lose;позволить себе потерять
+assets;актив,активы
+surrounding;окрестный
+vehicle;транспортное средство
+unattended;без присмотра
+wary;настороженный
+treat;обращаться,относиться;Treat your password like your toothbrush. Don’t let anybody else use it and change it every 6 months.
+further;дальше
+deceptive;обманчивый;[disEptiv]
+deceive;обманывать
+suspicious;подозрительный;[suspIshes] Suspicious activity on bank account is often used for phishing attacks. Be suspicious even if it comes from a trusted source
+there is a suspicion that;есть подозрение что;[suspIshn] To make matters worse, there is a suspicion that electoral politics played a part.;Что еще хуже, есть подозрение, что свою роль сыграла предвыборная политика.
+overdue;просроченный; Overdue or unpaid taxes, also, very often used for phishing attacks
+enforcement;правоприменение;Government agency such as law enforcement is often used for phishing attacks
+dispose of;распоряжаться;Dispose of Physical Media Properly;Распоряжайтесь физическими носителями надлежащим образом
+obsolete;устаревший,отживший
+renewable;возобновляемый
+penetrate;проникать
+violation;нарушение
+irreparable;непоправимый;[irEperable] Damage to the Company’s reputation is irreparable
+damage;повреждать
+to adhere;придерживаться;Everyone has a responsibility to adhere to all company policies.
+severity;суровость
+proceed;исходить,продолжать,действовать;
+within;в пределах
+vital;жизненно важный
+frustrating,upset;расстроенный
+precedes;предшествует;[presIds]
+wheel;колесо
+spin;вращаться
+lamb;ягненок
+bodily;телесный;
+fluid;жидкость
+pump up;накачивать
+cargo;груз
+climb;взбираться
+timetable,schedule;расписание
+fancy;изысканный
+sliver;щепка
+census;перепись
+liver;печень
+mashed;пюре
+slaughter;зарезать;[slOUte]
+lotion;лосьон
+hose;шланг
+running out time;истекает время
+clue;зацепка
+glue;клей
+lead;вести
+lean;опираться
+crumbs;крошки
+urgent;срочный
+tears;слезы
+lifting;поднимание
+crawl;ползти
+accurate;точный
+enroll;записываться
+by,until;до;I have to decide by Monday (accent only to end date). A have until Monday to deside (accent to period of time). Until uses when we say from ... until ...
+fall asleep;заснуть
+silly;глуповатый
+facility;средство,установка
+integrity;целостность
+principal;директор,доверитель,главный
+maintenance;обслуживание,поддержание
+insights;понимание,идеи
+holistic;целостный
+intelligence;интеллект
+facilitate;способствовать,облегчать;[facIlitate]
+leverage;система рычагов
+kick off;подать мяч
+apart;обособленно
+equipment;оборудование
+enriche;обогащать
+maturity;зрелость
+canned;консервированный
+reinforce;укреплять
+eliminate;устранять
+lane;полоса
+comprehensive;всесторонний
+stakeholder;акционер
+thereby;тем самым
+encourage;поощрять;[inkArij]
+instance;экземпляр
+stubborn;упрямый
+remain;оставаться
+pursuit;стремление,преследование
+abundant;обильный
+empowerment;наделение полномочиями
+wells;скважины
+
+bend,bent,bent;згибать,зибал,згибал
+cast,cast,cast;приводить,передать
+burst,burst,burst;лопаться
+cling,clung,clung;цепляться,цеплялся
+dig,dug,dug;копать,копал
+dive,dove,dived;углублятся;After we dove into this theme;После того, как мы погрузились в эту тему
+to creep,crept,crept;ползать,ползал
+deal,dealt,dealt;договариваться
+draw,drew,drawn;рисовать,рисовал
+dream,dreamt,dreamt;мечтаю,мечтал
+drink,drank,drunk;пить,пил,выпил;
+drive,drove,driven;водить,водил,водил;[drAIv],[drOv],[drIven]
+eat,ate,eaten;ем,ел,съел
+fall,fell,fallen;Падать,падал,упал;
+feed,fed,fed;кормить,кормить,кормить;
+feel,felt,felt;чувствовать,чувствовать,ощущать;
+fight,fought,fought;драться,дрался,дрался;[fAIt],[fOUt]
+find,found,found;найти,нашел,нашел
+flee,fled,fled;збежать,збежал
+fly,flew,flown;летать,лететь,летать;
+forbid,forbade,forbidden;запрещать, запрещать, запрещать;
+foretell,foretold,foretold;предсказывать,предсказанный,предсказанный;
+tell,told,told;рассказывать, рассказывать, рассказал;
+forget,forgot,forgotten;забывать,забыл,забытый;
+get,got,gotten;получить,получил,получил;
+forgive,forgave,forgiven;прощать,простил,простить;
+give,gave,given;дать,дал,дал;
+freeze,froze,frozen;замереть,застыть,замер;
+go,went,gone;идти,пошел,ушел;
+grow,grew,grown;расти,вырос,вырос;
+hang,hung,hung;висеть,висел,висел;
+overhang,overhung,overhung;нависать;
+have,had,had;есть,был,был
+hear,heard,heard;слушаю,слушал,услышал
+overhear,overheard,overheard;подслушивать,подслушивал,подслушал;
+hide,hid,hidden;скрыть,спрятал,спрятал;[hAId],[hId],[hIden]
+hit,hit,hit;бить,бил,бил
+hold,held,held;держать,держал,держал
+hurt,hurt,hurt;повредить,повредил,повредил
+keep,kept,kept;держаться,держался,держался
+kneel,knelt,knelt;стоять на коленях
+knit,knit,knit;вязать
+know,knew,known;знать,знал,знал
+lay,laid,laid;класть,проложенный,проложенный;
+lead,led,led;вести,вел,вел
+plead,pled,pled;признать,признал,признался
+lean,leant,leant;опираться,опирался,оперся
+learn,learnt,learnt;учиться,учил,научился;
+leave,left,left;Покинуть,оставил,оставил;
+lend,lent,lent;одалживать
+let,let,let;позволять,позволил,позволял
+lie,lay,lain;лежать,лежал
+to light,lit,lit;зажечь,
+lose,lost,lost;терять,потерял,потерял
+make,made,made;делать,делал,зделал;
+mean,meant,meant;означать,означал,означал
+meet,met,met;встечать,встречал,встретил
+mow,mowed,mown;косить
+mistake,mistook,mistaken;ошибиться,ошибся,ошибся;
+take,took,taken;брать,взял,взятый;
+pay,paid,paid;платить,оплачивал,оплатил
+overpay,overpaid,overpaid;переплатить,переплатил,переплачивал
+put,put,put;класть,положить,положить;
+quit,quit,quit;уходить,ушел,ушел
+read,read,read;читать,читал,прочитал
+rid,rid,rid;избавлять,избавлятся,избавился
+ride,rode,ridden;ездить,ехал,ездил;
+ring,rang,rung;звенеть,позвонил,звонить
+rise,rose,risen;подниматься,подняться,подняться
+run,ran,run;бежать,бегал,бежал
+saw;пила,пилить
+say,said,said;говорить,говорил,говорил
+see,saw,seen;видеть,виел,увидел
+seek,sought,sought;стремиться,стремился
+sell,sold,sold;продавать,продал,продал;
+send,sent,sent;отправить,отправлено,отправлено;
+set,set,set;ставить,устанавливать;
+sew,sewed,sewn;шить,сшитый,сшитый;[sOU],[sOUd],[sOUn]
+shake,shook,shaken;встряхнуть,потряс,потрясен;
+shine,shone,shone;сиять,сиял,сиял
+show,showed,shown;показать,показал,показывал
+shrink;shrank;shrunk;сокращать;сжался;уменьшился
+to sink,sank,sunk;тонуть,тонул,затонул
+sit,sat,sat;сидеть,сидел,сидел;
+sleep,slept,slept;спать,спал,спал;
+smell,smelt,smelt;пахнуть,нюхать,нюхать;
+sow,sowed,sown;сеять,посеял,посеянный
+speak,spoke,spoken;говорить,говорил,говорил;
+to slide,slid,slid;скользить,соскользнул,соскользнул
+to speed,sped,sped;разгоняться,ускорился,ускорился
+to spell,spelt,spelt;произносить
+spend,spent,spent;тратить
+spill,split,split;проливать,пролил
+split,split,split;разделять
+spoil,spoilt,spoilt;портиться
+spread,spread,spread;распространяться
+to stick,stuck,stuck;придерживаться
+to sting,stung,stung;жалить,ужаленный
+swing,swung,swung;качать,качался
+tear,tore,torn;рвать,порвал,разорванный
+sweep,swept,swept;подметать,подметен
+teach,taught,taught;учат,учил,учил;
+think,thought,thought;думать,думал;
+undo,undid,undone;отменить
+to upset,upset,upset;расстраивать
+wake,woke,woken;будить,проснулся,проснулся
+win,won,won;победить,выиграл
+write,wrote,written;писать,написал,написано;

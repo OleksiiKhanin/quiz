@@ -2,11 +2,12 @@ package service
 
 import (
 	"context"
-	retryablehttp "github.com/hashicorp/go-retryablehttp"
-	"golang.org/x/net/html"
 	"net/http"
 	"net/url"
 	"strings"
+
+	retryablehttp "github.com/hashicorp/go-retryablehttp"
+	"golang.org/x/net/html"
 )
 
 type Doer interface {
@@ -29,7 +30,7 @@ func NewHandler(addr, dictionary string) *parser {
 	}
 }
 
-func (o *parser) HandleGET(ctx context.Context, word string, handler func(data string, path []string, attr ...html.Attribute)) error {
+func (o *parser) HandleGET(ctx context.Context, word string, handler func(data string, path []string)) error {
 	reqURL := o.u.JoinPath(word)
 	req, err := retryablehttp.NewRequestWithContext(ctx, http.MethodGet, reqURL.String(), nil)
 	req.Header.Set("User-Agent", "Mozilla/5.0 (X11; Ubuntu; Linux x86_64; rv:109.0) Gecko/20100101 Firefox/109.0")
@@ -48,13 +49,16 @@ func (o *parser) HandleGET(ctx context.Context, word string, handler func(data s
 	var f func(path []string, n *html.Node)
 	f = func(path []string, n *html.Node) {
 		for item := n.FirstChild; item != nil; item = item.NextSibling {
+			s := strings.TrimSpace(item.Data)
 			if item.Type == html.TextNode {
-				handler(item.Data, path, item.Attr...)
-			} else {
-				if s := strings.TrimSpace(item.Data); len(s) > 0 {
-					path = append(path, s)
+				if len(s) > 0 {
+					handler(s, path)
 				}
-				f(path, item)
+			} else {
+				cpPath := make([]string, len(path))
+				copy(cpPath, path)
+				cpPath = append(cpPath, s)
+				f(cpPath, item)
 			}
 		}
 	}

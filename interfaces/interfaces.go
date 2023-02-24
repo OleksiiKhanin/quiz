@@ -3,6 +3,7 @@ package interfaces
 import (
 	"context"
 	"english-card/dto"
+
 	"github.com/jmoiron/sqlx"
 )
 
@@ -34,6 +35,14 @@ type ImageTx interface {
 	TransactionGetter
 	GetImage(ctx context.Context, hash string) (dto.Image, error)
 	InsertImage(ctx context.Context, tittle, typ string, image []byte) (string, error)
+	End
+}
+
+type RatingTx interface {
+	TransactionGetter
+	GetRating(ctx context.Context, cardID int64) (dto.Rating, error)
+	InsertRating(ctx context.Context, cardID int64) error
+	UpdateRating(ctx context.Context, cardID int64, star uint8) (dto.Rating, error)
 	End
 }
 
